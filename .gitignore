@@ -6,11 +6,14 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-
+prisma/*.db
+prisma/*.db-journal
 node_modules
 dist
 dist-ssr
 *.local
+.env
+.env.* 
 
 # Editor directories and files
 .vscode/*
@@ -22,3 +25,13 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+.next/         # Next.js build output
+out/           # Next.js static export (if used)
+build/         # CRA / some Node builds
+.vite/         # Vite cache (if present)
+.turbo/        # Turborepo cache
+.cache/
+.parcel-cache/
+coverage/
+.eslintcache
+.vercel/
