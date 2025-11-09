@@ -2,8 +2,11 @@ import axios from "axios";
 import dayjs from "dayjs";
 import { toast } from "react-toastify";
 
+toast.error(window.location.href);
 export const api = axios.create({
-  baseURL: "http://localhost:7109/api",
+  baseURL: "http://localhost:3000/api",
+    // baseURL: window.location.href + "api",
+
 });
 
 export const getAllProperties = async () => {
