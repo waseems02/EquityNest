@@ -6,8 +6,10 @@
   "type": "module",
   "scripts": {
     "start": "nodemon index.js",
-    "postinstall": "prisma generate"
-  },
+    "postinstall": "prisma generate",
+    "engines": { "node": "20.x", "yarn": "1.x" },
+    "packageManager": "yarn@1.22.19"
+    },
   "dependencies": {
     "@prisma/client": "^6.17.1",
     "cookie-parser": "^1.4.6",
